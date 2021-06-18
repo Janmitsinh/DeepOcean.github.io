@@ -1,0 +1,529 @@
+
+*{
+	margin : 0;
+	padding: 0;
+	font-family: sans-serif; 
+}
+/* Heading under dolphin */
+.ml2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background-color:transparent;
+  position: relative;
+  animation: text 3s 1;
+  animation-iteration-count: infinite;
+  animation-direction:initial;
+}
+@keyframes text {
+0% {
+    color: rgb(24, 131, 192);
+    margin-bottom: -40px;
+}
+
+30% {
+    letter-spacing: 7px;
+    margin-bottom: -40px;
+}
+
+85% {
+    letter-spacing: 1px;
+    margin-bottom: -40px;
+}
+}
+
+
+/* home */
+.hero{
+	width: 100% ;
+	height: 100vh;
+	background-image:url(images/house.jpg) ;
+	background-size: cover;
+	background-position : center;
+    position: relative;
+	overflow: hidden;
+
+}
+.logo{
+	width:100px;
+	cursor:no-drop;
+ 
+}
+.navbar{
+	width: 85%;
+	height: 15%;
+	display:flex;
+	align-items: center;
+  justify-content: left;
+  margin-left: -500px; 
+}
+button{
+	color :rgb(207, 228, 226);
+	padding: 5px 15px;
+	background: transparent;
+	border: 0px solid #fff;
+	outline: none;
+	border-radius: 50px;
+	cursor: pointer;
+ 
+}
+.content{
+	color: rgb(209, 211, 228);
+	position: absolute;
+	top:50%;
+	left:8% ;
+	transform: translateY(50%);
+	z-index: 2;
+}
+h1{
+	font-size: 60px;
+	margin: 10px 0 30px;
+	line-height: 80px;
+}
+.side-bar{
+	width: 50px;
+	height: 100vh;
+	background: linear-gradient(#00545d , #000729) ;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.menu{
+	display: block;
+	width: 25px;
+	margin: 40px auto 0;
+	cursor: pointer;
+}
+.social-links img , .useful-links img{
+  width: 30px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.social-links{
+	width: 50px;
+	text-align:center;
+	position: absolute;
+	top : 50%;
+	transform: translateY(-50%);
+}
+.useful-links{
+	width: 50px;
+	text-align:center;
+	position: absolute;
+	bottom: 30px;
+}
+.bubbles img{
+	width: 50px;
+	animation: bubble 7s linear infinite;
+}
+.bubbles{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -100px;
+}
+@keyframes bubble{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	58%{
+		opacity: 0;
+	}
+	
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+
+.bubbles img:nth-child(1){
+	animation-delay: 2s ;
+	width: 25px;
+	
+}
+.bubbles img:nth-child(2){
+	animation-delay: 1s ;
+	width: 40px;
+}
+.bubbles img:nth-child(3){
+	animation-delay: 3s ;
+	width: 55px;
+}
+.bubbles img:nth-child(4){
+	animation-delay: 4.5s ;
+	width: 50px;
+}
+.bubbles img:nth-child(5){
+	animation-delay: 3s ;
+	width: 80px;
+}
+.bubbles img:nth-child(6){
+	animation-delay: 6s ;
+	width: 35px;
+}
+.bubbles img:nth-child(7){
+	animation-delay: 7s ;
+}
+
+
+
+/* --------CARD 1---------*/
+
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 340px;
+	perspective: 1000px;
+	
+  }
+  .ml2 {
+	font-weight: 900;
+	font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+	display: inline-block;
+	line-height: 1em;
+  }
+  
+/*--2--*/
+
+  .flip-card2 {
+	background-color: transparent;
+	margin-left: 350px;
+	margin-top:-370px;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	box-shadow: 40px 4px 8px 0 rgba(0, 0, 0, 0.253);
+  }
+  
+  .flip-card-inner2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front2 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back2 {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .bt2{
+	border:rgb(216, 42, 19) ;
+	height: 110px;
+	font-size: 17px;
+	font-family: 'Courier New', Courier, monospace;
+ }
+
+/*--3--*/
+
+.flip-card3 {
+	background-color: transparent;
+	margin-left: 700px;
+	margin-top:-300px;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	box-shadow: 40px 4px 8px 0 rgba(0, 0, 0, 0.253);
+  }
+  
+  .flip-card-inner3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card3:hover .flip-card-inner3 {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front3, .flip-card-back3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front3 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back3 {
+	background-color: rgb(5, 5, 5);
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .bt3{
+	border:rgb(216, 42, 19) ;
+	height: 110px;
+	font-size: 17px;
+	font-family: 'Courier New', Courier, monospace;
+ }
+
+/*--4--*/
+
+.flip-card4 {
+	background-color: transparent;
+	margin-left: 1047px;
+	margin-top:-300px;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	box-shadow: 40px 4px 8px 0 rgba(0, 0, 0, 0.253);
+  }
+  
+  .flip-card-inner4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card4:hover .flip-card-inner4 {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front4, .flip-card-back4 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front4 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back4 {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+  .bt4{
+	border:rgb(216, 42, 19) ;
+	height: 110px;
+	font-size: 17px;
+	font-family: 'Courier New', Courier, monospace;
+ }
+
+/* 
+/*foote--------------------------------*/
+footer {
+  width: 100%;
+  padding: 1rem 5rem 3rem;
+  display: grid;
+  color:white;
+  grid-template-columns: none;
+  background-color:rgb(20, 20, 20);
+}
+
+footer .footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-menu h4 {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/*  Button of sign up 
+*/      .open-button {
+        background-color:transparent;
+        color: white;
+        padding: 0px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        margin-right: 50px ;
+        right: 28px;
+        width: 100px;
+      }
+      
+      /* -- sign up ---------------*/
+      /* The popup form - hidden by default */
+      ::placeholder {
+        color: rgb(12, 14, 12);
+        opacity: 1; /* Firefox */
+      }
+      
+      .form-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border:1px solid transparent;
+        z-index: 9;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color:transparent;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background:transparent;
+      }
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        background-color:transparent;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: #04AA6D;
+        box-shadow: yellow;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 1;
+      }
+      
+      /* Add a red background color to the cancel button */
+      
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+      
+
+
+
+
+
+      
+      /* image /card silder */
+      .container2:hover .image {
+        opacity: 0.3;
+        cursor: pointer;
+      }
+      
+      .container2:hover .middle {
+        opacity: 1;
+      }
+      .image{
+        opacity: 1;
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    transition: .5s ease;
+	    	backface-visibility: hidden;
+      }
+      .text {
+        color: rgb(17, 19, 17);
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: left;
+      }
+      .btn5{
+        font-size: 30px;
+        margin-top: 400px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f1f5f64b;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+      }
+      .container2:hover .overlay {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        cursor: pointer;
+      }   
+      .container2 {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }   
+      
+
+
+      /* adada */
+      
+.item figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.item figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
